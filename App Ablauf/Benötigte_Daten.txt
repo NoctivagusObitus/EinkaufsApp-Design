@@ -1,0 +1,15 @@
+Start:
+-
+
+Login Screen:
+Nutzername
+Email
+Passwort
+(Abgleich mit Datenbank)
+
+Registrierung:
+Nutzername
+Email-Adresse
+Passwort
+Passwort wiederholen
+(Hinzufügen zur Datenbank)
