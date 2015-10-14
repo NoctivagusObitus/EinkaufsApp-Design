@@ -1,7 +1,7 @@
 Start:
 -
 
-Login Screen:
+Login Screen (Anmeldevorgang):
 Nutzername
 Email
 Passwort
