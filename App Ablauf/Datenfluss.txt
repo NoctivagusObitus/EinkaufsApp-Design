@@ -1,0 +1,65 @@
+﻿1.0
+-
+
+
+1.1
+Automatischer Abgleich ob Email und Passwort gespeichert. Wenn ja automatisch anmelden. Ansonsten 1.2
+
+
+1.2
+-
+
+
+1.3
+Nutzer-Entscheidung, entweder 1.3.1 oder 1.3.2 anschließend.
+
+1.3.1
+Felder anzeigen zur Eingabe von:
+Email-Adresse (dient als Nutzername, muss unique sein)
+Passwort
+Passwort bestätigen
+Registrierung bestätigen.
+
+1.3.2
+Feld für Email-Adresse
+Feld für Passwort
+Login-Button
+
+
+1.4
+Eingabe der Daten in die Felder von 1.3.1
+
+1.4.1
+Daten aus 1.3.1 werden mit Datenbank abgeglichen und zwischengespeichert. Email auf Einmaligkeit prüfen. Passwort gleich
+
+1.4.2
+-
+
+1.4.3
+Sinn nicht verstanden. Erneute Prüfung nicht notwendig?
+
+1.4.4
+Falls Passwort nicht übereinstimment, Fehlermeldung zu Passwort.
+Falls Email nicht einmallig, Email-Fehlermeldung.
+
+1.4.5
+Anzeigen des Registrierungs-Bildschirms. Bei Passwort-Fehler Email-Adresse schon voreingetragen.
+Wenn Email-Fehler alle Felder leer.
+
+
+1.5
+Befüllen der Felder von 1.3.2
+
+1.5.1
+Abgleich der eingegebenden Daten mit Datenbank. Zwischenspeichern von Email-Adresse
+
+1.5.2
+Wenn Abgleich richtig, dann 2.0 (Übergabe von Email als Identifizierungsmöglichkeit für weitere Aktionen)
+Wenn falsch, dann zurück zu 1.5 (1.3.2)
+
+1.5.3
+Benutzer oder Passwort unbekannt. Email-Adresse wird vorausgefüllt. Passwort muss neu eingegeben werden.
+
+
+2.0
+-
