@@ -1,15 +1,19 @@
 Start:
 -
 
-Login Screen (Anmeldevorgang):
-Nutzername
-Email
+Ein Nutzer war bereits angemeldet (Entscheidung):
+Informationen über vergangene Logins auf Gerät, auslesen von Nutzername und Passwort
+
+Benutzer vorhanden (Entscheidung)
+Nutzerentscheidung.
+
+Login Screen (+gesamter anschließender Vorgang)
+Nutzername (Email-Adresse)
 Passwort
 (Abgleich mit Datenbank)
 
+
 Registrierung:
-Nutzername
-Email-Adresse
+Nutzername (Email-Adresse) - muss unique/einmalig sein.
 Passwort
-Passwort wiederholen
-(Hinzuf�gen zur Datenbank)
+(Hinzufügen zur Datenbank)
