@@ -3,6 +3,7 @@ Start:
 
 Ein Nutzer war bereits angemeldet (Entscheidung):
 Informationen über vergangene Logins auf Gerät, auslesen von Nutzername und Passwort
+Falls Daten vorhanden, automatisch anmelden. Andernfalls weiter.
 
 Benutzer vorhanden (Entscheidung)
 Nutzerentscheidung.
