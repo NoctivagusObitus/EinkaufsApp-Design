@@ -1,4 +1,4 @@
-1.0
+﻿1.0
 Start der Applikation.
 
 
@@ -79,6 +79,3 @@ Email-Adresse wird vorausgefüllt. Erneute Passwort-Eingabe durch Nutzer.
 Anzeigen des Startbildschirms bzw. Hauptmenü
 
 
-
-
-WOZU BRAUCHEN WIR DIESEN DRISS?
