@@ -1,0 +1,43 @@
+5.3
+Start des Prozesses
+
+5.3.1
+Anzeige der Eingabefelder:
+Texteingabefeld: Name
+Texteingabefeld: Kette
+Texteingabefeld: Straße
+Texteingabefeld: Hausnummer
+Texteingabefeld: Plz
+Texteingabefeld: Ort
+Klick-Button: Hinzufügen
+Klick-Button: Abbruch
+
+5.3.2
+Nutzerentscheidung
+
+5.3.3
+Klick-Button: Abbruch in 5.3.2 ausgewählt. Ansicht beenden und zurück zu Einkäufe.
+
+5.3.4
+Nutzereingabe in die Felder aus 5.3.1:
+Texteingabe: Name
+Texteingabe: Kette
+Texteingabe: Straße
+Texteingabe: Hausnummer
+Texteingabe: Plz
+Texteingabe: Ort
+Klick-Button: Hinzufügen weiter zu 5.3.5
+Klick-Button: Abbruch siehe 5.3.3
+
+5.3.5
+Abbgleich der eingegebenen Daten aus 5.3.4 mit ....
+
+5.3.6
+Falls Markt noch nicht vorhandenen, weiter zu 5.3.8
+Falls Markt bereits vorhandenen, weiter zu 5.3.7
+
+5.3.7
+Anzeigen einer Meldung, dass der Markt bereits vorhanden ist. Zurück zu N.D.-Menüpunkt
+
+5.3.8
+Alle in 5.3.4 eingegebenen Daten des Marktes in Datenbank hinterlegen.
