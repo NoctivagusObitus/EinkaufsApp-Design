@@ -79,3 +79,96 @@ Email-Adresse wird vorausgefüllt. Erneute Passwort-Eingabe durch Nutzer.
 Anzeigen des Startbildschirms bzw. Hauptmenü
 
 
+3.0
+Beginn des Einkauf-Prozesses
+
+
+3.0.1
+Abfrage an Datenbank, ob ein nicht als geschlossen gekennzeichneter Einkauf vorliegt.
+
+
+3.0.2
+Wenn Abfrage aus 3.0.1 Ja ergibt, dann 3.03
+Wenn Abfrage aus 3.0.1 Nein ergibt, dann 3.1
+
+
+3.0.3
+Popup, ob Nutzer den Einkauf fortsetzen möchte.
+Wenn Ja (3.0.5) dann weiter mit 3.0.6
+Wenn Nein (3.0.4) weiter mit 3.1
+
+
+3.0.4
+Nutzerentscheidung
+
+
+3.0.5
+Nutzerentscheidung
+
+
+3.0.6
+Aufrufen der als nicht abgeschlossenen gekennzeichneten Einkaufsliste aus Datenbank. Ausgabe in 3.9
+
+
+3.1
+GPS-Abfrage nach Standort des Nutzers. (Längen- und Breitengrad ?). In Datenbank nach vorhandenen Märkten suchen, welche eine ähnliche Position besitzen.
+Ähnliche Position ist noch zu definieren; Umkreis von 200/500 Metern um Nutzerstandort zum Beispiel. Umkreis einstellbar durch Nutzer?
+// Für Später, eventuell Karte mit Stecknadeln statt Liste
+
+
+3.2
+Liste der Ergebnisse der Datenbank-Abfrage aus 3.1 anzeigen. Wenn keine Ergebnisse vorhanden, leere Liste anzeigen.
+
+
+3.3
+Click-Button: Zurück
+Wird in der Liste der verfügbaren Märkte (3.2) angezeigt.
+
+
+3.4
+Nutzerentscheidung, ob die Liste aus 3.2 gewünschten Markt enthält.
+Falls Ja, weiter mit 3.6
+Falls Nein, Unterprogramm Markt aufnehmen (3.5) starten
+
+
+3.5
+Unterprogramm Markt aufnehmen, siehe zugehöriges Dokument
+
+
+3.6
+Nutzerauswahl des gewünschten Marktes.
+
+
+3.7
+Nutzer wird gefragt, ob er als Einzelperson einkaufen möchte oder für eine Gruppe.
+
+
+3.7.1
+Konkrete Nutzerentscheidung zu 3.7 entweder weiter mit 3.7.2 oder 3.7.3
+
+
+3.7.2
+Einzelpersoneinkauf ausgewählt, weiter zu 3.8
+
+
+3.7.3
+Gruppeneinkauf ausgewählt. Weiter zu 3.7.4
+
+
+3.7.4
+Anzeigen der vorhandenen Gruppen. Entweder 3.7.5 oder Unterprogramm Gruppe erstellen (5.1)
+
+
+3.7.5
+Auswahl einer bestehenden Gruppe für den Einkauf
+
+
+3.7.6
+Abfrage beim Nutzer ob die Gruppe vollständig (3.7.7) ist oder nicht (5.2).
+
+
+3.7.7
+Gruppenzusammenstellung fertig, weiter zu Barcodescanner (3.8)
+
+
+3.8
