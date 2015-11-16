@@ -1,0 +1,172 @@
+1.0
+Nutzer startet Applikation.
+
+
+  1.1
+  Automatischer Abgleich ob Email-Adresse und Passwort gespeichert.
+  Wenn ja automatisch weiter zu 2.0. Ansonsten 1.2
+
+
+  1.2
+  Anzeige des Welcome-Screens.
+  Weiter zu 1.3
+
+
+  1.3
+  Nutzer-Entscheidung, entweder 1.3.1 oder 1.3.2 anschließend.
+
+
+    1.3.1
+    Anzeigen von mehreren Nutzer-Eingabefeldern zur Registrierung:
+    Texteingabefeld: Email-Adresse (muss unique sein)
+    Texteingabefeld: Nutzername (muss unique sein)
+    Texteingabefeld: Passwort
+    Texteingabefeld: Passwort bestätigen (Muss übereinstimmen mit Password-Eingabefeld)
+    Button zum Anklicken: Registrierung bestätigen.
+
+
+    1.3.2
+    Anzeige von Nutzer-Eingabefeldern zur Anmeldung:
+    Texteingabefeld: Email-Adresse
+    Texteingabefeld: Passwort
+    Button zum Anklicken: Anmelden
+
+
+  1.4
+  Eingabe der Daten in die Felder von 1.3.1:
+  Texteingabefeld: Email-Adresse
+  Texteingabefeld: Nutzername
+  Texteingabefeld: Passwort
+  Texteingabefeld: Passwort bestätigen
+  Button zum Anklicken: Registrierung bestätigen.
+
+
+    1.4.1
+    Daten aus 1.4 werden mit Datenbank abgeglichen und zwischengespeichert.
+    Eingegebende Email-Adresse auf Einmaligkeit prüfen.
+    Eingegebenden Nutzername auf Einmaligkeit prüfen.
+    Eingegebende Passwöter auf Gleichheit überprüfen.
+
+
+    1.4.2
+    Falls Eingaben korrekt Nutzer-Daten in Datenbank speichern. Weiter zu 1.4.3.
+    Ansonsten 1.4.4
+
+
+    1.4.3
+    Ausgabe einer Erfolgsmeldung.
+    Automatischer Login mit eingegebenden Daten.
+    Weiter zu 2.0
+
+
+    1.4.4
+    Falls eingegbene Passwörter nicht übereinstimmen, Passwort-Fehlermeldung anzeigen.
+      Passwort-Fehlermeldung: Eingegebende Passwörter stimmen nicht überein.
+    Falls eingegebene Email-Adresse nicht einmallig, Email-Fehlermeldung anzeigen.
+      Email-Fehlermeldung: Die eingegebene Email-Adresse wird bereits verwendet.
+    Falls eingegebener Nutzername nicht einmallig, Nutzername-Fehlermeldung anzeigen.
+      Nutzernamen-Fehlermeldung: Der eingegebene Nutzername wird bereits verwendet.
+
+
+    1.4.5
+    Anzeigen des Registrierungs-Bildschirms.
+    Bei Passwort-Fehlermeldung aus 1.4.4, Email-Adresse und Nutzername schon voreingetragen im Registrations-Screen.
+    Bei Email-Fehlermeldung aus 1.4.4, Nutzername schon voreingetragen im Registrations-Screen.
+    Bei Nutzernamen-Fehlermeldung aus 1.4.4, Email-Adresse schon voreingetragen im Registrations-Screen.
+
+
+  1.5
+  Befüllen der Felder von 1.3.2:
+  Texteingabefeld: Email-Adresse
+  Texteingabefeld: Passwort
+  Button zum Anklicken: Anmelden
+
+
+    1.5.1
+    Abgleich der eingegebenden Daten in 1.5 mit Datenbank. Zwischenspeichern der Email-Adresse.
+
+
+    1.5.2
+    Wenn Abgleich korrekt, weiter zu 2.0 (Übergabe des Benutzernamens als Identifier für weitere Aktionen?)
+    Wenn mindestens eine der Eingaben falsch, weiter zu 1.5.3
+
+
+    1.5.3
+    Anzeige der Anmeldungs-Fehlermeldung:
+      Anmeldungs-Fehlermeldung: Email-Adresse oder Passwort unbekannt.
+    Weiter zu 1.5.4
+    
+    
+    1.5.4
+    Anzeige des Anmelde-Screens.
+    Eingabefeld: Email-Adresse vorausgefüllt. Email-Adresse aus Zwischenspeicher (1.5.1).
+    Eingabefeld: Passwort leer.
+    Weiter zu 1.5
+
+
+2.0
+Anzeigen des Startbildschirms bzw. Hauptmenüs der Applikation.
+Ermöglicht Zugriff auf 3.0, 4.0, 5.0, 6.0 und 7.0
+
+
+3.0
+Nutzer beginnt Einkauf.
+
+
+  3.1
+  Einkaufsprozess (ausgelagert)
+
+
+4.0
+Nutzer meldet sich von der Applikation ab.
+Weiter zu 1.2
+
+
+5.0
+Nutzer gelangt zu 5.0.1
+
+
+    5.0.1
+    Nutzerentscheidung:
+    Entweder weiter zu 5.0.2 (Gruppen)
+    Oder weiter zu 5.0.3 (Kontakte)
+    
+    
+    5.0.2
+    Weiter zu 5.0.4 (Sinn?)
+    
+    
+    5.0.3
+    Anzeige der Kontakte des Nutzers.
+    
+    
+    5.0.4
+    Anzeigen des Gruppenmenüs: Nutzer sieht seine bereits erstellen Gruppen.
+    
+    
+    5.0.5
+    Nutzerentscheidung:
+    Entweder weiter zu 5.1 (Gruppe erstellen)
+    Oder weiter zu 5.2 (Gruppe bearbeiten)
+
+
+  5.1
+  Gruppe erstellen (ausgelagert)
+  
+  
+  5.2
+  Gruppe bearbeiten (ausgelagert)
+  
+  
+  5.3
+  Kontakte verwalten (ausgelagert)
+
+
+6.0
+Nutzer gelangt zur Auswertung seiner Daten.
+Weiter zu ....
+
+
+7.0
+Nutzer gelangt zu den Einstellungen der Applikation.
+Weiter zu ....

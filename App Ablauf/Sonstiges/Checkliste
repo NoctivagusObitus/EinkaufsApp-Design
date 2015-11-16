@@ -1,0 +1,35 @@
+
+Checkliste Softwareengineering
+
+Präsentaion (20 Min)
+ 	Vorführung des SW Systems (Video/Live Vorstellung)
+ 	Architekturbeschreibung
+ 	Versionsverwaltung
+ 	Vorgehensmodell
+
+Dokumentation (Formelle Richtigkeit)
+ 	Use Case Diagramm (Erstellen Sie ein allgemeines Anwendungsfalldiagramm zum Softwaresystem! Erstellen Sie ein Anwendungsfalldiagramm für eine konkrete Situation, z.B. „Einkauf einlesen“ und „Ausgabenverlauf anzeigen“.)
+ 	Activity Diagramm (Erstellen Sie ein Aktivitätsdiagramm für den konkreten Anwendungsfall von Use Case Diagramm!)
+ 	Klassendiagramm (Erstellen Sie ein Entitäts-Klassendiagramm zum Szenario! Das Klassendiagramm enthält mindestens 5 Klassen, die in Beziehung zueinander stehen. Die Attribute und Methoden jeder Klassen werden definiert. Die Beziehungen sind vollständig definiert und enthalten die notwendigen Kardinalitäten.)
+ 	Sequence Diagramm (Erstellen Sie ein Sequenzdiagramm für den konkreten Anwendungsfall von Use Case Diagramm!)
+ 	Zustandsdiagramm (Erstellen Sie ein Zustandsdiagramm zur Entitätsklasse „Einkaufszettel“!)
+ 	Vorbereitende  Aufgaben
+ 	1. Wer arbeitet mit dem Softwaresystem? 
+ 	2. Welcher Benutzer benötigt welche Funktionen? 
+ 	3. Welche Informationen müssen zu einer Person/Benutzer gespeichert werden, um einen Geschäftsprozess, z. B. das für WG einkaufen, mit dem System abzuwickeln? 
+ 	4. Welche im Szenario nicht genannten Funktionen werden von dem Softwaresystem benötigt, um heutigen Anforderungen zu entsprechen? Nennen Sie beispielhaft fünf Funktionen! 
+ 	5. Was ist ein Anwendungsfall und welche Beziehungen zwischen Anwendungsfällen beschreibt der Standard [1]? 
+ 	6. Beschreiben Sie die Anwendung	
+ 	Auswertung
+ 	Stellen Sie die Eigenschaften der Diagramme gegenüber! Gehen Sie dabei darauf ein, was in den Diagrammen dargestellt wird und welche Aspekte in Bezug auf die anderen Diagramme nicht ersichtlich sind! Nutzen Sie dazu eine Tabelle! 
+ 	2. Welches Diagramm muss innerhalb des Designprozesses der Software konkretisiert werden? 
+ 	3. Wie unterstützt der EA bei der Erstellung der UML Diagramme? Nennen Sie mindestens drei Beispiele, die Ihnen besonders aufgefallen sind!
+ 	Installationshandbuch
+ 	Benutzerhandbuch (wie ist es zu bedienen)
+ 	Architekturbeschreibung
+ 	Vorgehensmodell
+ 	Versionsverwaltung
+
+Allgemein
+ 	Abgabetermin ????????
+
