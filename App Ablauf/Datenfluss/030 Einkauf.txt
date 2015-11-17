@@ -1,4 +1,4 @@
-3.1
+3.1 (siehe 030 Einkauf.dia)
 Beginn des Einkaufs-Prozess
 
 
@@ -14,6 +14,9 @@ Beginn des Einkaufs-Prozess
   
   3.1.3
   Abfrage an den Nutzer, ob der offene Einkauf fortgesetzt werden soll.
+  Popup oder gesamter Screen mit 2 Buttons:
+  Click-Button: Ja
+  Click-Button: Nein
   
   
   3.1.4
@@ -32,9 +35,10 @@ Beginn des Einkaufs-Prozess
   
   
   3.1.7
-  GPS-Abfrage nach Standort des Nutzers. (Längen- und Breitengrad ?).
+  GPS-Abfrage nach Standort des Nutzers. (Längen- und Breitengrad ?). Passiert automatisch.
   In Datenbank nach vorhandenen Märkten suchen, welche eine ähnliche Position besitzen.
-  Ähnliche Position ist noch zu definieren; Umkreis von 200/500 Metern um Nutzerstandort zum Beispiel. Umkreis einstellbar durch Nutzer?
+  Ähnliche Position ist noch zu definieren; Umkreis von 200/500 Metern um Nutzerstandort zum Beispiel.
+  Umkreis einstellbar durch Nutzer?
   // Für Später, eventuell Karte mit Stecknadeln statt Liste
   
   
@@ -44,17 +48,17 @@ Liste der Ergebnisse der Datenbank-Abfrage aus 3.1 anzeigen. Wenn keine Ergebnis
 
 3.3
 Click-Button: Zurück
-Wird in der Liste der verfügbaren Märkte (3.2) angezeigt.
+Wird in der Listenansicht der verfügbaren Märkte (3.2) angezeigt.
 
 
 3.4
 Nutzerentscheidung, ob die Liste aus 3.2 den gewünschten Markt enthält.
-Falls Ja, weiter mit 3.6
-Falls Nein, Unterprozess 3.5 (Markt aufnehmen) beginnen
+Falls Ja klickt Nutzer den relevanten Mark an. Weiter mit 3.6
+Falls Nein klickt der Nutzer den Click-Button "Markt aufnehmen" an. Unterprozess 3.5 (Markt aufnehmen) beginnen
 
 
 3.5
-Markt aufnehmen (ausgelagert)
+Markt aufnehmen (ausgelagerter Unterprozess)
 
 
 3.6
@@ -69,8 +73,8 @@ Click-Button: Gruppeneinkauf
 
   3.7.1
   Nutzerentscheidung zu 3.7
-  Wenn Einzeleinkauf angeclickt weiter zu 3.7.2
-  Wenn Gruppeneinkauf angeclickt weuter zu 3.7.3
+  Wenn Einzeleinkauf angeklickt weiter zu 3.7.2
+  Wenn Gruppeneinkauf angeklickt weuter zu 3.7.3
   
   
   3.7.2
@@ -82,19 +86,22 @@ Click-Button: Gruppeneinkauf
   
   
   3.7.4
-  Liste der vorhandenen Gruppen anzeigen
+  Liste der vorhandenen Gruppen des aktiven Nutzers anzeigen
   Anschließend Nutzerentscheidung ob Gruppe vorhanden.
   Falls ja, weiter zu 3.7.5
   Falls nein, weiter zu 5.1 (ausgelagert)
   
   
   3.7.5
-  Nutzer fällt relevante Gruppe aus.
+  Nutzer fällt relevante Gruppe aus durck Klick in der Liste aus.
   Weiter zu 3.7.6
   
   
   3.7.6
   Nutzerentscheidung: Gruppe verwalten.
+  Screen anzeigen, mit Text: Soll die ausgewählte Gruppe bearbeitet werden?
+  Click-Button: Ja
+  Click-Button: Nein
   Falls ja, weiter zu 5.2 (ausgelagert)
   Falls nein, weiter zu 3.7.7
   
@@ -104,11 +111,12 @@ Click-Button: Gruppeneinkauf
   
   
 3.8
-Barcode-Scanner
+Barcode-Scanner (vorgegebene Funktionalität)
 
 
   3.8.1
-  Abfrage ob, der mit 3.8 eingescannter Artikel mit dem in 3.6 ausgewählten Markt innerhalb der Datenbank verbunden.
+  Abfrage ob, der mit 3.8 eingescannte Artikel in Datenbank vorhanden und mit dem in 3.6 ausgewählten Markt innerhalb
+  der Datenbank verknüpft.
   Falls ja, weiter zu 3.8.8
   Falls nein, weiter zu 3.8.2
   
@@ -120,7 +128,7 @@ Barcode-Scanner
   
   
   3.8.3
-  .... ?
+  .... ? //Keine Funktionalität.
   Weiter zu 3.8.4
   
   
@@ -146,56 +154,57 @@ Barcode-Scanner
   
   3.8.8
   Anzeiger aller Informationen zu dem in 3.8 eingescannten Artikel.
-  Name, Preis, Menge
+  Name, Preis, Menge, EAN.
+  Checkbox: Sonderpreis.
   
   
     3.8.8.1
-    Abfrage ob, der angezeigte Preis korrekt/aktuell ist.
-    Falls ja, weiter zu 3.8.9
-    Falls nein, weiter zu 3.8.8.2
+    Nutzerentscheidung zur Checkbox Sonderpreis (3.8.8)
+    Falls angehakt, weiter zu 3.8.9
+    Falls nicht angehakt, weiter zu 3.8.8.2
     
     
     3.8.8.2
-    Eingabefeld Sonderpreis anzeigen
+    Eingabefeld: Sonderpreis
     Weiter zu 3.8.8.3
     
     
     3.8.8.3
-    Nutzereingabe des Sonderpreises.
+    Nutzereingabe des Sonderpreises. //Speichern doppelt?
     Weiter zu 3.8.8.4
     
     
     3.8.8.4
-    Sonderpreis wird für eine Woche (default-Wert) in Datenbank hinterlegt.
+    Sonderpreis wird für eine Woche (o.ä. default-Wert) in Datenbank hinterlegt.
     Weiter zu 3.8.9
     
     
   3.8.9
-  Artikel-Anzahl eingebenen
-  Artikel einer Person zuordnen.
+  Nutzereingabe Artikel-Anzahl
+  Nutzereingabe: Artikel einer Person zuordnen.
   
   
 3.9
-Ausgeben der Einkaufsliste.
+Ausgeben der (aktualisierten) Einkaufsliste.
 Anzeige der bereits aufgenommenen Einkäufe oder leere Liste.
 
 
   3.9.1
-  Nutzerentscheidung: Einkaufsliste bearbeiten
+  Nutzerentscheidung: Einkaufsliste bearbeiten. Dazu jeweiligen Artikel auswählen (Klick)
   Wenn ja, weiter zu 3.9.3
   Wenn nein, weiter zu 3.9.2
   
   
   3.9.2
-  Weiterleitung zu 3.9.7
+  Weiterleitung zu 3.9.7 //Funktionalität?
   
   
   3.9.3
-  Starten von 3.9.4
+  Starten des Bearbeiten-Modus (3.9.4)
   
   
   3.9.4
-  Nutzer kann Liste bearbeiten.
+  Nutzer kann Artikel bearbeiten.
   Entweder 3.9.5
   Oder 3.9.6
   
@@ -222,8 +231,8 @@ Anzeige der bereits aufgenommenen Einkäufe oder leere Liste.
   
     3.10.1
     Übersicht über den Einkauf anzeigen:
-    Alle Produkte mit Preis + Begünstigtem
-    Gesamtpreis
+    -Alle Produkte mit Preis + Begünstigtem
+    -Gesamtpreis
     Weiter zu 3.10.2
     
     
