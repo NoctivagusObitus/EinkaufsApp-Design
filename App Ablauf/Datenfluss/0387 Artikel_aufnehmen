@@ -1,0 +1,19 @@
+      3.8.7 Beginn des Prozess Artikel aufnehmen
+      //Für Einordnung siehe 030 Einkauf.dia
+    
+    
+    3.8 Barcode Scanner
+    Artikel einscannen
+    //Funktionalität anderweitig definiert
+    
+    
+        3.8.7.1
+        Screen anzeigen mit Nutzereingabe-Feldern:
+        Eingabefeld: Produktname
+        Eingabefeld: Preis
+        Eingabefeld: Inhalt
+        Eingabefeld: Grundpreis   //Grundpreis immer bekannt?
+        
+        
+        3.8.7.2
+        Nutzereingaben zu eingescanntem Artikel in Datenbank speichern
