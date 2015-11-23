@@ -1,0 +1,61 @@
+5.0
+Oberpunkt Gruppenverwaltung
+Button: Gruppe erstellen (5.1)
+Button: Gruppe bearbeiten (5.2)
+//Eventuel weitere Unterpunkte
+
+
+  5.1
+  Prozess Gruppe erstellen beginnt
+  
+  
+  5.2
+  Prozess Gruppe bearbeiten beginnt
+
+
+  5.3
+  Screen auf dem alle verfügbaren Gruppen des aktuellen Nutzers angezeigt werden.
+
+
+    5.3.1
+    Nutzer klickt gewünschte Liste an wodurch er in die Ansicht der Mitgliederliste (5.4) gelangt
+  
+  
+  5.4
+  Screen zur Anzeige aller hinzufügbaren Mitglieder
+  Texteingabefeld für den Namen der Gruppe
+  Button: + hinter Nutzer welcher nicht bereits in dieser Gruppe ist
+  Button: x hinter Nutzer welcher bereits zu dieser Gruppe hinzugefügt wurde
+  Button: Speichern
+  Button: Zurück
+  // Definition hinzufügbare Mitglieder? Freundeslistensystem, dass Nutzer bestätigen
+  // müssen, dass man sie hinzufügen darfst? Dummynutzer?
+  
+  
+    5.4.1
+    Klicken des + Buttons durch den Nutzer. Mitglied wird der zu erstellenden Gruppe hinzugefügt.
+    
+    
+    5.4.2
+    Klicken des x Buttons durch den Nutzer. Mitglied wird wieder aus der zu erstellenden Gruppe entfernt.
+    
+    
+    5.4.3
+    Gruppe wird in Datenbank erstellt. bzw aktualisiert wenn Mitglieder hinzugefügt oder wieder entfernt werden.
+    
+    
+    5.4.4
+    Nutzerentscheidung, ob ein Mitglied hinzugefügt oder entfernt werden soll. Wiederholt sich nach
+    jeder Durchführung von 5.4.1 und 5.4.2
+    Falls Gruppe finalisiert weiter zu 5.4.5
+    
+    5.4.5
+    Falls noch kein Name vorhanden gibt Nutzer einen Namen für die Gruppe ein.
+    Nutzer klickt auf den Button speichern.
+    Gruppe wird in Datenbank gespeichert oder aktualisiert
+    Prozess beendet.
+    
+    
+    5.4.6
+    Button: Zurück wird angeklickt. Zurück zum Obermenüpunkt Gruppenverwaltung (5.0)
+    
