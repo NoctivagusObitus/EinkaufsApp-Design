@@ -1,0 +1,56 @@
+1.6 Start der Passwort Rücksetzung
+Link oder Weiteleitung zu neuem Screen (oder Website)
+
+
+  1.6.1
+  Zurück-Button welcher den Passwort-vergessen-Screen wieder schließt
+  und zum Login-Screen zurückkehrt.
+  
+  
+  1.6.2
+  Anzeige des Passwort-zurücksetzen-Screens.
+  Textausgabe:
+  Bitte geben Sie die Email-Adresse Ihres Accounts ein.
+  Sie erhalten anschließend einen Link zur Passwortrücksetzung.
+  Texteingabefeld für Email-Adresse
+  Button: Zurücksetzen
+  
+  
+  1.6.3
+  Nutzereingabe der Email-Adresse.
+  Bestätigung mit Button Zurücksetzen.
+  
+  
+  1.6.4
+  Email mit Rücksetzungslink verschicken. Email muss individualisierten Token zur Identifizierung enthalten.
+  
+  
+  1.6.5
+  Anzeige einer Textausgabe:
+  Ihr Link zur Passwortrücksetzung wurde versendet. Bitte schauen Sie auch in Ihren Spam-Ordner.
+  
+  
+  1.6.6
+  Nutzer öffnet Email-Postfach und die empfangene Email zur Passwortrücksetzung.
+  Klickt anschließend auf den enthaltenen Link.
+  
+  
+  1.6.7
+  Der durch den Nutzer eingegebene Token wird mit Datenbank abgeglichen.
+  Falls korrekt weiter zu Passwort ändern anzeigen (1.6.8)
+  
+  
+  1.6.8
+  Anzeigen eines Screens um das Passwort zu ändern.
+  Texteingabefeld: Neues Passwort eingeben.
+  Texteingabefeld: Passwort bestätigen
+  Click-Button: Bestätigen
+  
+  
+  1.6.9
+  Nutzereingabe des neuen Passworts (2x) und anschließend anklicken des Bestätigen-Buttons.
+  
+  
+  1.6.10
+  Passwort des Nutzers wird in Datenbank geändert und gespeichert.
+  Prozess beendet, Weiterleitung ins Hauptmenü.
