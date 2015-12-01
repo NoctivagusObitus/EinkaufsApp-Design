@@ -1,0 +1,95 @@
+  6.1
+  Beginn des Auswertung-Prozess
+  Hauptmenüpunkt
+  
+  
+    6.1.1
+    Auswertungsmenü
+    Nutzerentscheidung, welche Auswertungsmöglichkeit betrachetet werden soll:
+    Fünf Click-Buttons:
+    (6.2) Kaufhäufigkeit
+    (6.3) Ausgabenverlauf
+    (6.4) Gruppenverlerlauf
+    (6.1.2) Datum
+    Zurück: Nutzer kehrt zum Hauptmenü der Applikation zurück.
+    
+    
+    6.1.2
+    Innerhalb des Auswertungsmenüs (6.1.1) besteht die Möglichkeit über einen Kalender
+    den Datumsbereich für alle folgendenen Auswertungsschritte einzuschränken.
+    Einzelner Tag oder Datumsbereich kann für die Betrachtung ausgewählt werden.
+    
+    
+  6.2
+  Beginn der Kaufhäufigkeit-Auswertung
+  
+  
+      6.2.1
+      Liste aller für sich gekauften (falls nicht eingeschränkter Zeitraum (6.1.2)) Produkten wird generiert.
+      
+      
+      6.2.2
+    Dem Nutzer wird die Liste aller jemals für sich gekauften (falls nicht eingeschränkt (6.1.2)) Artikel angezeigt,
+    geordnet nach Kaufhäufigkeit (desc). Dazu wird neben dem Artikelnamen, die Kaufhäufigkeit als Zahl angezeigt.
+    Click-Button: Zurück: Nutzer kehrt zum Auswertungsmenü (6.1.1) zurück.
+    
+    
+      6.2.3
+      Nutzer klickt einen der Artikel der angezeigten Liste an. Weiter zu 6.2.4
+    
+    
+      6.2.4
+      Es werden alle in der Datenbank hinterlegten Zusatzinformationen angezeigt:
+      Kaufort und Laden /* zum Beispiel: Edeka, Idioten-Allee 4 */ mit Summe filialenspezifischer Käufe
+      Anzeige des aktuellsten Preises zu dem jeweiligen Standortes
+      EAN-Nummer
+      Inhalt(-smenge)
+      Click Button: Zurück: Nutzer kehrt zur Listenansicht der Produkte zurück.
+      
+      
+    6.3
+    Beginn der Ausgabenverlauf-Auswertung
+    
+    
+      6.3.1
+      Generierung eines Graphen.
+      Entsthet indem, meine persönlichen Ausgaben pro Tag als Punkt in ein Koordinatensystem
+      eingetragen werden und anschließend verbunden werden. Zeitraum ist entweder der in 6.1.2 eingestellte
+      Oder standartmäßig 30 Tage.
+      
+      
+      6.3.2
+      Anzeige/Ausgabe des generierten (6.3.1) Graphen.
+      
+      
+    6.4
+    Gruppenverlauf-Auswertung
+    
+    
+      6.4.1
+      Dem Nutzer werden alle Gruppen angezeigt in denen er Mitglied ist.
+      ZUrück-Button
+      
+      
+      6.4.2
+      Nutzer wählt eine seiner Gruppen mittels Click aus.
+      
+      6.4.3
+      Erstellung der relevanten Mitgliederliste
+      
+      
+      6.4.4
+      Die Mitglieder der ausgewählten Gruppe werden angezeigt.
+      Hinter jedem Mitglied in Rot(z.B.: +8,40 oder -3,00) oder Grau(z.B.: +-0) Anzeige der aktuellen Schulden.
+      
+      
+      6.4.5
+      Nutzer klickt ein Mitglied der Gruppe an. Liste mit Zusatzinformationen wird erstellt.
+      
+      
+      6.4.6
+      Liste mit Zusatzinformationen wird angezeigt:
+      Produkt(e) wird angezeigt mit Kaufzeitpunkt und Ort( d.h. Laden)
+      Darausfolgend auch der dazugehörige Preis.
+      Dies betrifft Produkte für die die Person Schulden beim Nutzer hat und vice versa.
+      Zurück-Button
